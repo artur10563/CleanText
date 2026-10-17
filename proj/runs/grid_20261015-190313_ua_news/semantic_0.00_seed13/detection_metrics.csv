@@ -1,0 +1,8 @@
+key,method,AP,PR-AUC,ROC-AUC,Precision@K,Recall@K,F1@K,TP,FP,FN,K
+random,Випадкове ранжування,,,,0.0,,,0,160,0,160
+loss,Loss (остання епоха),,,,0.0,,,0,160,0,160
+margin,Margin-подібний показник (не повний AUM),,,,0.0,,,0,160,0,160
+dynamics,"Абляція: лише динаміка R(C,D,0)",,,,0.0,,,0,160,0,160
+semantic,"Абляція: лише семантика R(0,0,S)",,,,0.0,,,0,160,0,160
+proposed,"Запропонований R(C,D,S)",,,,0.0,,,0,160,0,160
+cleanlab,Cleanlab OOF (1 − self-confidence),,,,0.0,,,0,160,0,160

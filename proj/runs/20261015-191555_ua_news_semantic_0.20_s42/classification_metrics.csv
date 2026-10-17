@@ -1,0 +1,2 @@
+key,method,accuracy,macro_f1,weighted_f1,n_train,removed,removed_corrupted,delta_macro_f1,ci_low,ci_high
+noisy,Без очищення (зашумлені дані),0.7566666666666667,0.7211296644694362,0.7484111741324501,800,0,0,,,

@@ -1,0 +1,47 @@
+{
+  "config": {
+    "dataset": "ua_news",
+    "review_task": "intent",
+    "csv_path": null,
+    "n_train": 800,
+    "n_val": 200,
+    "n_test": 300,
+    "noise_type": "semantic",
+    "noise_rate": 0.2,
+    "seed": 42,
+    "alpha": 0.45,
+    "beta": 0.35,
+    "gamma": 0.2,
+    "k_neighbors": 10,
+    "budget_frac": 0.2,
+    "embedding": "minilm",
+    "classifier": "mlp",
+    "epochs": 8,
+    "batch_size": 32,
+    "lr": 0.001,
+    "hidden": 256,
+    "dropout": 0.3,
+    "max_features": 30000,
+    "max_length": 128,
+    "bert_lr": 3e-05,
+    "bert_batch_size": 16,
+    "run_cleanlab": true,
+    "oof_folds": 3,
+    "oof_epochs": 4,
+    "run_retrain": true,
+    "run_oracle": true,
+    "bootstrap": 500
+  },
+  "types": [
+    "semantic",
+    "symmetric"
+  ],
+  "rates": [
+    0.0,
+    0.2
+  ],
+  "seeds": [
+    13,
+    42
+  ]
+}

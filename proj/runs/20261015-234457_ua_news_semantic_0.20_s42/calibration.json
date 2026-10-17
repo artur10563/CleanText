@@ -1,0 +1,17 @@
+{
+  "alpha": 0.2,
+  "beta": 0.1,
+  "gamma": 0.7,
+  "ap_calib": 0.4385481830335428,
+  "ap_calib_fixed": 0.4170058734358915,
+  "mode": "known_type",
+  "noise_type": "semantic",
+  "noise_rate": 0.2,
+  "seed": 2026,
+  "n_calib": 350,
+  "n_corrupted": 70,
+  "grid_step": 0.1,
+  "epochs": 8,
+  "classifier": "mlp",
+  "from_cache": false
+}

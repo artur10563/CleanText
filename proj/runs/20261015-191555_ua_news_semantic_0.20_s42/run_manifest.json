@@ -1,0 +1,124 @@
+{
+  "created": "2026-10-15T19:15:55",
+  "config": {
+    "dataset": "ua_news",
+    "review_task": "intent",
+    "csv_path": null,
+    "n_train": 800,
+    "n_val": 200,
+    "n_test": 300,
+    "noise_type": "semantic",
+    "noise_rate": 0.2,
+    "seed": 42,
+    "alpha": 0.45,
+    "beta": 0.35,
+    "gamma": 0.2,
+    "k_neighbors": 10,
+    "budget_frac": 0.2,
+    "embedding": "tfidf_svd",
+    "classifier": "mlp",
+    "epochs": 8,
+    "batch_size": 32,
+    "lr": 0.001,
+    "hidden": 256,
+    "dropout": 0.3,
+    "max_features": 30000,
+    "max_length": 128,
+    "bert_lr": 3e-05,
+    "bert_batch_size": 16,
+    "run_cleanlab": false,
+    "oof_folds": 3,
+    "oof_epochs": 4,
+    "run_retrain": false,
+    "run_oracle": true,
+    "bootstrap": 500
+  },
+  "labels": [
+    "бізнес",
+    "новини",
+    "політика",
+    "спорт",
+    "технології"
+  ],
+  "data": {
+    "source": {
+      "repo": "FIdo-AI/ua-news",
+      "pool_train": 15000,
+      "pool_test": 4000
+    },
+    "sizes": {
+      "train": 800,
+      "val": 200,
+      "test": 300
+    },
+    "removed_duplicates": {
+      "test": 0,
+      "val": 0,
+      "train": 0
+    },
+    "class_counts": {
+      "train": {
+        "політика": 266,
+        "спорт": 188,
+        "новини": 171,
+        "бізнес": 99,
+        "технології": 76
+      },
+      "val": {
+        "політика": 66,
+        "спорт": 47,
+        "новини": 43,
+        "бізнес": 25,
+        "технології": 19
+      },
+      "test": {
+        "політика": 98,
+        "спорт": 70,
+        "новини": 53,
+        "бізнес": 46,
+        "технології": 33
+      }
+    },
+    "length": {
+      "train": {
+        "mean": 957.49,
+        "median": 1037.5
+      },
+      "val": {
+        "mean": 928.35,
+        "median": 964.0
+      },
+      "test": {
+        "mean": 939.55,
+        "median": 968.0
+      }
+    },
+    "split_hashes": {
+      "train": "8d4caa154cf5d675",
+      "val": "cba0d4bdde74764b",
+      "test": "0de8a9b41a99886a"
+    }
+  },
+  "budget_K": 160,
+  "actual_injected_noise_rate": 0.2,
+  "n_corrupted": 160,
+  "device": "cpu",
+  "timings": {
+    "data_and_embeddings_s": 6.246017932891846,
+    "base_training_s": 14.796672105789185,
+    "risk_scoring_s": 0.0008652210235595703
+  },
+  "removed_ids": {},
+  "versions": {
+    "python": "3.13.14",
+    "torch": "2.12.1+cpu",
+    "sklearn": "1.9.1",
+    "numpy": "2.5.0",
+    "pandas": "3.0.6",
+    "cleantext": "1.0.0",
+    "transformers": "5.19.0",
+    "sentence_transformers": "6.1.0",
+    "cleanlab": "2.9.0"
+  },
+  "texts_dir": "."
+}
